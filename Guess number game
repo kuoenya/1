@@ -1,0 +1,23 @@
+import random
+secret= random.randint(1,3)
+print('================YOU MUST GUESS IT!!================')
+print('---------------------------------------------------')
+print('  Ready ?  gogo')
+
+num = input('  Can you guess a number_ ')
+g = int(num)
+
+while g != secret:
+	num = input('  NO...KEEP GOING!!_ ')
+	g = int(num)
+	if g==secret:
+	  print('  YES!!!!!!')
+	  print("  No gift :P")
+	else:
+	  if g > secret:
+                        print("  too big")
+	  else:
+                        print('  Too small nonono')
+print('YOU WIN IN THE FIRST TIME???!!! SO COOL')
+print('  GAME OVER~~')
+
